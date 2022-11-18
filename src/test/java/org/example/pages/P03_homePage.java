@@ -77,6 +77,27 @@ public class P03_homePage {
         return Hooks.driver.findElement(By.className("youtube"));
     }
 
+    //F08
+
+
+
+    public WebElement Wish_ListButton()
+    {
+        return Hooks.driver.findElement(By.xpath("//div//button[@onclick='return AjaxCart.addproducttocart_catalog(\"/addproducttocart/catalog/18/2/1\"),!1']"));
+    }
+    public WebElement Success_Mssage()
+    {
+        return Hooks.driver.findElement(By.xpath(".//div[@class=\"bar-notification success\"]"));
+    }
+    public WebElement Wish_ListLink()
+    {
+        return Hooks.driver.findElement(By.xpath(".//a[@class=\"ico-wishlist\"]"));
+    }
+    public WebElement Item_Amount()
+    {
+        return Hooks.driver.findElement(By.xpath(".//input[@class=\"qty-input\"]"));
+    }
+
 }
 
 
