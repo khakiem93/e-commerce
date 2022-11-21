@@ -59,6 +59,17 @@ public class P03_homePage {
     {
         return Hooks.driver.findElement(By.cssSelector("div[class=\"page-title\"]>h1"));
     }
+
+    //F06
+    public List<WebElement> Home_Slider()
+    {
+        return Hooks.driver.findElements(By.xpath("//div[@class=\"nivo-controlNav\"]/a"));
+    }
+    public List<WebElement> slider_Screens()
+    {
+        return Hooks.driver.findElements(By.xpath("//div[@id=\"nivo-slider\"]/a"));
+    }
+
     //F07
     public WebElement iconSelector_FaceBook()
     {
@@ -78,8 +89,6 @@ public class P03_homePage {
     }
 
     //F08
-
-
 
     public WebElement Wish_ListButton()
     {
